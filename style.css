@@ -15,7 +15,7 @@ html {
 body {
   width: 100%;
   height: 100%;
-  background: url("/images/sitebg.jpg") no-repeat center fixed;
+  background: url("./images/sitebg.jpg") no-repeat center fixed;
   background-size: cover;
 }
 section {
@@ -109,6 +109,10 @@ header {
   transition: all 650ms cubic-bezier(1, 0, 0, 1);
 }
 
+img.userImg {
+  width: 30%;
+  border-radius: 50%;
+}
 .nav-list {
   list-style: none;
   width: 100%;
@@ -186,14 +190,17 @@ header {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 100%;
   text-align: center;
   z-index: 1;
 }
+.landing-text p {
+  font-size: 2.5rem;
+}
 
 .landing-text h1 {
-  font-size: 20rem;
-  font-family: "The Historia Demo", sans-serif;
+  font-size: 10rem;
+  font-weight: 900;
+  text-transform: uppercase;
   letter-spacing: 1rem;
   background: linear-gradient(to top, #ffe838, #fd57bf);
   -webkit-background-clip: text;
@@ -202,8 +209,14 @@ header {
   user-select: none;
 }
 .landing-text h6 {
-  font-size: 2rem;
+  font-size: 4rem;
   font-weight: 300;
+  letter-spacing: 1rem;
+  background: linear-gradient(to top, #ffe838, #fd57bf);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  padding: 1rem;
+  user-select: none;
 }
 
 /*End header*/
@@ -228,9 +241,12 @@ header {
   font-size: 2rem;
   font-weight: 300;
 }
-.profile-img {
+.profileImg {
   flex: 1;
-  margin-right: 5rem;
+  margin: 0 auto;
+}
+img.proImg {
+  width: 75%;
 }
 .about-details {
   flex: 1;
@@ -516,14 +532,14 @@ input[type="submit"]:hover {
 
 @media screen and (max-width: 768px) {
   body {
-    background: url("/images/sitebg2.jpg") no-repeat center fixed;
+    background: url("./images/sitebg2.jpg") no-repeat center fixed;
     background-size: cover;
   }
   .landing-text h1 {
-    font-size: 15rem;
+    font-size: 10rem;
   }
   .landing-text h6 {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
   }
   .nav-list {
     flex-direction: column;
@@ -586,10 +602,13 @@ input[type="submit"]:hover {
     right: 2rem;
   }
   .landing-text h1 {
-    font-size: 8rem;
+    font-size: 6rem;
+  }
+  .landing-text p {
+    font-size: 2rem;
   }
   .landing-text h6 {
-    font-size: 1.4rem;
+    font-size: 2rem;
   }
   .nav-link {
     font-size: 3.5rem;
@@ -597,8 +616,11 @@ input[type="submit"]:hover {
   .about .container {
     flex-direction: column;
   }
-  .profile-img {
+  .profileImg {
     margin: 0 0 7rem 0;
+  }
+  img.proImg {
+    width: 100%;
   }
   .about-heading h1 {
     font-size: 8rem;
