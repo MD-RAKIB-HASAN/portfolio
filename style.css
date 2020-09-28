@@ -28,6 +28,7 @@ a {
 p {
   font-size: 1.8rem;
   font-weight: 300;
+  line-height: 25px;
 }
 img {
   width: 100%;
@@ -110,7 +111,7 @@ header {
 }
 
 img.userImg {
-  width: 30%;
+  width: 20%;
   border-radius: 50%;
 }
 .nav-list {
@@ -186,15 +187,19 @@ img.userImg {
 }
 
 .landing-text {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  position: relative;
+  margin-top: 5rem;
   text-align: center;
   z-index: 1;
+  text-transform: uppercase;
 }
 .landing-text p {
-  font-size: 2.5rem;
+  font-size: 3.5rem;
+  position: absolute;
+  left: 13%;
+  top: 27rem;
+  font-weight: 100;
+  color: gray;
 }
 
 .landing-text h1 {
@@ -535,10 +540,19 @@ input[type="submit"]:hover {
     background: url("./images/sitebg2.jpg") no-repeat center fixed;
     background-size: cover;
   }
+  .landing-text {
+    margin-top: 10rem;
+  }
   .landing-text h1 {
-    font-size: 8rem;
+    margin-top: 2rem;
+    font-size: 5rem;
   }
   .landing-text h6 {
+    font-size: 2.5rem;
+  }
+  .landing-text p {
+    left: 12.5%;
+    top: 25rem;
     font-size: 2.5rem;
   }
   .nav-list {
@@ -595,7 +609,7 @@ input[type="submit"]:hover {
     font-size: 1.5rem;
   }
   img.userImg {
-    width: 50%;
+    width: 30%;
   }
   img.proImg {
     position: relative;
@@ -603,16 +617,19 @@ input[type="submit"]:hover {
   }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 375px) {
   .menu-toggler {
     top: 2rem;
     right: 2rem;
   }
   .landing-text h1 {
-    font-size: 7rem;
+    font-size: 2.5rem;
+    letter-spacing: 0.5rem;
   }
   .landing-text p {
     font-size: 2rem;
+    left: 11.5%;
+    top: 21rem;
   }
   .landing-text h6 {
     font-size: 2rem;
@@ -669,6 +686,15 @@ input[type="submit"]:hover {
   }
   .contact-details h5 {
     font-size: 2.2rem;
+  }
+  img.userImg {
+    width: 50%;
+  }
+}
+@media screen and (max-width: 340px) {
+  .landing-text p {
+    left: 27px;
+    top: 18rem;
   }
 }
 
