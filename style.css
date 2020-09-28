@@ -697,5 +697,14 @@ input[type="submit"]:hover {
     top: 18rem;
   }
 }
+@media (min-width: 376px) and (max-width: 576px) {
+  .landing-text p {
+    top: 130px;
+    font-size: 2rem;
+  }
+  .landing-text h1 {
+    font-size: 2.5rem;
+  }
+}
 
 /*End media queries*/
